@@ -125,7 +125,7 @@ class Igrac(Agent):
                     self.set_next_state("trenutna_igra")
                 elif "pobjednik" in status:
                     print(f"Moje karte su... {karte}")
-                    print("Ovaj puta sam imao više sreće!\n")
+                    print("Ovog puta imao sam više sreće!\n")
                     self.set_next_state("kraj_igre")
 
                 elif "gubitnik" in status:
