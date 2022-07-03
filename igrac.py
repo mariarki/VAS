@@ -112,7 +112,6 @@ class Igrac(Agent):
                 self.set_next_state("cekanje_igre")
 
     class IgranjeIgre(State):
-        
         async def run(self):
             poruka = await self.receive(timeout = 180)
             global mojeKarte
@@ -160,11 +159,9 @@ class Igrac(Agent):
                     await self.send(p)
                 
                 elif vrstaPoruke == "tvoje_karte":
-                    #print("Uso u tvoje karte")
                     mojeKarte = sadrzajPoruke["karte"]
                 
                 elif vrstaPoruke == "karte_suparnika":
-                    #print("Uso u karte suparnika")
                     imeSuparnika = sadrzajPoruke["imeSuparnika"]
                     imaKarte = sadrzajPoruke["imaKarte"]
                     nemaKarte = sadrzajPoruke["nemaKarte"]
