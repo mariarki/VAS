@@ -1,5 +1,5 @@
 # VAS
-Ovdje se nalazi projekt iz kolegija VAS - "Izmišljena igra s kartama"
+Ovdje se nalazi projekt iz kolegija VAS - Kartaška igra "Go Fish"
 
 Upute za pokretanje
 1. Ubuntu instalacija (može i u virtualnoj mašini)
